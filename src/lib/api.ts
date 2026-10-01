@@ -1,4 +1,4 @@
-const API_BASE_URL = '/api';
+const API_BASE_URL = ((import.meta as any).env?.VITE_API_URL as string | undefined)?.replace(/\/$/, '') || '';
 
 export function getAuthToken(): string | null {
   return localStorage.getItem('vetrivel_auth_token');
@@ -29,7 +29,8 @@ export async function apiFetch<T = any>(endpoint: string, options: RequestInit =
     delete headers['Content-Type'];
   }
 
-  const url = endpoint.startsWith('/api') ? endpoint : `${API_BASE_URL}${endpoint}`;
+  const cleanEndpoint = endpoint.startsWith('/api') ? endpoint : `/api${endpoint.startsWith('/') ? '' : '/'}${endpoint}`;
+  const url = API_BASE_URL ? `${API_BASE_URL}${cleanEndpoint}` : cleanEndpoint;
   const response = await fetch(url, {
     ...options,
     headers,
