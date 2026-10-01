@@ -1,0 +1,18 @@
+{
+  "short_name": "Qelanto",
+  "name": "Qelanto Workspace",
+  "icons": [
+    {
+      "src": "/qelanto-logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#0d9488",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "description": "Internal Client & Task Management System for Qelanto Technologies"
+}

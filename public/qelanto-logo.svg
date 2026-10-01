@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" fill="none">
+  <!-- Q Circle body in Navy -->
+  <path d="M 65 30 A 45 45 0 1 0 100 115 L 115 130 C 118 133 125 130 123 125 L 115 105 A 45 45 0 0 0 65 30 Z" fill="#0F172A" />
+  <!-- Q Inner cutout -->
+  <circle cx="95" cy="80" r="24" fill="#FFFFFF" />
+  <!-- Upward Teal Arrow swoosh -->
+  <path d="M 50 105 C 75 75 100 45 140 30 L 122 28 L 155 22 L 148 55 L 138 38 C 105 52 82 80 58 112 Z" fill="#00C4B4" />
+  
+  <!-- Text 'elanto' in Teal -->
+  <g fill="#00C4B4" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="82" letter-spacing="-1.5">
+    <text x="155" y="112">elanto</text>
+  </g>
+</svg>
